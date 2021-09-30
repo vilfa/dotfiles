@@ -1,0 +1,65 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.enableExperiments": false,
+    "editor.fontFamily": "monospace",
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block-outline",
+    "workbench.colorTheme": "Core (Dark)",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "breadcrumbs.icons": false,
+    "outline.icons": false,
+    "workbench.iconTheme": "vs-minimal",
+    "editor.formatOnSave": true,
+    "scm.inputFontSize": 14,
+    "editor.cursorBlinking": "solid",
+    "python.formatting.provider": "yapf",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "vim.disableExtension": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-j>": false,
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "debug.allowBreakpointsEverywhere": true,
+}

@@ -1,0 +1,7 @@
+[init]
+	defaultbranch = master
+[user]
+	email = luka.vilfan@protonmail.com
+	name = Luka Vilfan
+[core]
+	editor = vim
