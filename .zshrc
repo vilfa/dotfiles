@@ -106,9 +106,9 @@ alias love="echo \"baby don't hurt me\""
 alias ls="ls --color=auto"
 alias ll="ls --color=auto -la"
 alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
+alias df="df -h"                          # human-readable sizes
+alias free="free -m"                      # show sizes in MB
+alias np="nano -w PKGBUILD"
 alias more=less
 
 base_64_decode() {
@@ -121,4 +121,4 @@ base_64_encode() {
 
 alias b64d=base_64_decode
 alias b64e=base_64_encode
-alias config='usr/bin/git --git-dir=/home/luka/.dotfiles/ --work-tree=/home/luka'
+alias config="/usr/bin/git --git-dir=/home/luka/.dotfiles/ --work-tree=/home/luka"
