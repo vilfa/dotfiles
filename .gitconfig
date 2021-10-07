@@ -3,7 +3,10 @@
 [user]
 	email = luka.vilfan@protonmail.com
 	name = Luka Vilfan
+	signingkey = 0814D0AB5C84BA21
 [core]
 	editor = vim
 [commit]
 	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg

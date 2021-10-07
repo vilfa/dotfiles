@@ -3,7 +3,6 @@
     "workbench.enableExperiments": false,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
-    "editor.cursorStyle": "block-outline",
     "workbench.colorTheme": "Core (Dark)",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -18,7 +17,7 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "vim.disableExtension": false,
+    "vim.disableExtension": true,
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
