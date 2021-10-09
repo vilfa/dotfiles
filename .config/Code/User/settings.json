@@ -11,7 +11,7 @@
     "outline.icons": false,
     "workbench.iconTheme": "vs-minimal",
     "editor.formatOnSave": true,
-    "scm.inputFontSize": 14,
+    "scm.inputFontSize": 12,
     "editor.cursorBlinking": "solid",
     "python.formatting.provider": "yapf",
     "[python]": {
@@ -61,4 +61,8 @@
         "<C-f>": false
     },
     "debug.allowBreakpointsEverywhere": true,
+    "editor.fontSize": 12,
+    "debug.console.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
 }
