@@ -3,7 +3,7 @@
     "workbench.enableExperiments": false,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Core (Dark)",
+    "workbench.colorTheme": "Minimal Fedu Ext",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
