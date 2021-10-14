@@ -9,7 +9,7 @@
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "breadcrumbs.icons": false,
     "outline.icons": false,
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.iconTheme": null,
     "editor.formatOnSave": true,
     "scm.inputFontSize": 12,
     "editor.cursorBlinking": "solid",
@@ -65,4 +65,5 @@
     "debug.console.fontSize": 12,
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
+    "workbench.tree.renderIndentGuides": "always",
 }
