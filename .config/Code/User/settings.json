@@ -1,15 +1,15 @@
 {
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Minimal Fedu Ext",
+    "workbench.colorTheme": "Verdandi Alter",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "breadcrumbs.icons": false,
     "outline.icons": false,
-    "workbench.iconTheme": null,
+    "workbench.iconTheme": "vscode-icon-theme",
     "editor.formatOnSave": true,
     "scm.inputFontSize": 12,
     "editor.cursorBlinking": "solid",
@@ -66,4 +66,18 @@
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
     "workbench.tree.renderIndentGuides": "always",
+    "files.insertFinalNewline": true,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.formatting": "clangFormat",
+    "doxdocgen.generic.authorTag": "@author {author} <{email}>",
+    "doxdocgen.generic.useGitUserEmail": true,
+    "doxdocgen.generic.useGitUserName": true,
+    "doxdocgen.file.copyrightTag": [
+        // "@copyright Copyright (c) {year}"
+    ]
 }
