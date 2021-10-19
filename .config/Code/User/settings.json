@@ -1,83 +1,36 @@
 {
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
+    "workbench.iconTheme": "vscode-icon-theme",
+    "workbench.colorTheme": "Verdandi Alter",
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.fontSize": 12,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
-    "workbench.colorTheme": "Verdandi Alter",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "editor.formatOnSave": true,
+    "editor.cursorBlinking": "solid",
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.console.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "files.insertFinalNewline": true,
     "breadcrumbs.icons": false,
     "outline.icons": false,
-    "workbench.iconTheme": "vscode-icon-theme",
-    "editor.formatOnSave": true,
     "scm.inputFontSize": 12,
-    "editor.cursorBlinking": "solid",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "doxdocgen.generic.authorTag": "@author {author} <{email}>",
+    "doxdocgen.generic.useGitUserEmail": true,
+    "doxdocgen.generic.useGitUserName": true,
+    "doxdocgen.file.copyrightTag": [],
+    "C_Cpp.formatting": "vcFormat",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
     "python.formatting.provider": "yapf",
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "vim.disableExtension": true,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "after": [
-                "d",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-j>": false,
-        "<C-a>": false,
-        "<C-f>": false
-    },
-    "debug.allowBreakpointsEverywhere": true,
-    "editor.fontSize": 12,
-    "debug.console.fontSize": 12,
-    "markdown.preview.fontSize": 12,
-    "terminal.integrated.fontSize": 12,
-    "workbench.tree.renderIndentGuides": "always",
-    "files.insertFinalNewline": true,
-    "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "C_Cpp.formatting": "clangFormat",
-    "doxdocgen.generic.authorTag": "@author {author} <{email}>",
-    "doxdocgen.generic.useGitUserEmail": true,
-    "doxdocgen.generic.useGitUserName": true,
-    "doxdocgen.file.copyrightTag": [
-        // "@copyright Copyright (c) {year}"
-    ]
 }
