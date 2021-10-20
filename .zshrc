@@ -92,36 +92,8 @@ export EDITOR="vim"
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# GnuPG exports
-# export GPG_TTY=$(tty)
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias pls="doas"
-alias vi="vim"
-alias suvi="doas vim"
-alias myip="curl -4 ifconfig.co && curl -6 ifconfig.co"
-alias love="echo \"baby don't hurt me\""
-alias ls="ls --color=auto"
-alias ll="ls --color=auto -la"
-alias cp="cp -i"                          # confirm before overwriting something
-alias df="df -h"                          # human-readable sizes
-alias free="free -m"                      # show sizes in MB
-alias np="nano -w PKGBUILD"
-alias more=less
-
-base_64_decode() {
-    echo "$1" | base64 -d
-}
-
-base_64_encode() {
-    echo "$1" | base64
-}
-
-alias b64d=base_64_decode
-alias b64e=base_64_encode
-alias config="/usr/bin/git --git-dir=/home/luka/.dotfiles/ --work-tree=/home/luka"
+. ~/.zsh_aliases
