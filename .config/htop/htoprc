@@ -1,6 +1,6 @@
 # Beware! This file is rewritten by htop when settings are changed in the interface.
 # The parser is also very primitive, and not human-friendly.
-htop_version=3.1.0
+htop_version=3.1.1
 config_reader_min_version=2
 fields=0 48 17 18 38 39 40 2 46 47 49 1
 sort_key=46
@@ -37,7 +37,7 @@ color_scheme=0
 enable_mouse=1
 delay=15
 hide_function_bar=0
-header_layout=two_50_50
+header_layout=two_67_33
 column_meters_0=AllCPUs2 CPU Memory Swap
 column_meter_modes_0=1 2 2 2
 column_meters_1=DiskIO NetworkIO Systemd Tasks LoadAverage Uptime Battery

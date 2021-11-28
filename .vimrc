@@ -39,13 +39,12 @@ syntax on						" Turn on syntax highlighting
 " Set theme and optimize for dark colors
 set background=dark
 if has("gui_running")
-	" color base16-gruvbox-dark-medium
 	color base16-default-dark
 	set columns=999
 	set lines=999
 else
 	" colorscheme base16-gruvbox-dark-medium
-	colorscheme base16-default-dark
+	" colorscheme base16-default-dark
 endif
 
 """"""""

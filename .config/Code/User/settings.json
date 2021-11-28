@@ -2,6 +2,8 @@
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
     "editor.fontSize": 12,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
@@ -9,6 +11,9 @@
     "editor.formatOnSave": true,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
+    "editor.rulers": [
+        80
+    ],
     "debug.allowBreakpointsEverywhere": true,
     "debug.console.fontSize": 12,
     "markdown.preview.fontSize": 12,
@@ -28,9 +33,9 @@
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.cStandard": "c17",
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.clang_format_style": "Visual Studio",
     "python.formatting.provider": "yapf",
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "workbench.colorTheme": "Dark Purple - Webstorm",
 }
