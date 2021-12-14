@@ -7,13 +7,14 @@ alias suvi="sudo vim"
 alias myip="curl -4 ifconfig.co && curl -6 ifconfig.co"
 alias love="echo \"baby don't hurt me\""
 alias ls="ls --color=auto -h"
-alias ll="ls --color=auto -lah"			  # show sizes in human readable
-alias cp="cp -i"                          # confirm before overwriting something
-alias df="df -h"                          # human-readable sizes
-alias free="free -m"                      # show sizes in MB
+alias ll="ls --color=auto -lah"
+alias cp="cp -i"
+alias df="df -h"
+alias free="free -m"
 alias np="nano -w PKGBUILD"
-alias more=less
+alias more="less"
 alias hx="hx -t 0"
+alias c="clear"
 
 base_64_decode() {
     echo "$1" | base64 -d
