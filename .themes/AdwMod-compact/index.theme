@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=AdwMod-compact
+Type=X-GNOME-Metatheme
+Comment=Adwaita Modified
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=AdwMod-compact
+MetacityTheme=AdwMod-compact
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

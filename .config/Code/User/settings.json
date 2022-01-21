@@ -3,8 +3,7 @@
     "workbench.enableExperiments": false,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.colorTheme": "IBM Carbon Color Theme",
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme",
-    "editor.fontSize": 11,
+    "editor.fontSize": 12,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
@@ -12,16 +11,16 @@
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.rulers": [
-        100
+        80
     ],
     "debug.allowBreakpointsEverywhere": true,
-    "debug.console.fontSize": 11,
-    "markdown.preview.fontSize": 11,
-    "terminal.integrated.fontSize": 11,
+    "debug.console.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
     "files.insertFinalNewline": true,
     "breadcrumbs.icons": false,
     "outline.icons": false,
-    "scm.inputFontSize": 11,
+    "scm.inputFontSize": 12,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "rust-client.rustupPath": "~/.cargo/bin/rustup",
     "doxdocgen.generic.authorTag": "@author {author} <{email}>",
@@ -47,6 +46,24 @@
     },
     "extensions.ignoreRecommendations": true,
     "files.associations": {
-        "*.cl": "opencl"
+        "*.cl": "opencl",
+        ".clang-format": "yaml"
     },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.format.settings.profile": "GoogleStyle",
+    "terminal.integrated.scrollback": 1000000,
+    "explorer.confirmDragAndDrop": false,
+    "todohighlight.isCaseSensitive": false,
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
 }
