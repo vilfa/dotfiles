@@ -66,6 +66,7 @@ set $output-laptop eDP-1
 #
 # Schema variable
 set $gnome-schema org.gnome.desktop.interface
+set $gnome-wm-pref org.gnome.desktop.wm.preferences
 # Set interface settings
     exec_always {
         gsettings set $gnome-schema gtk-theme 'AdwMod-compact-dark'
@@ -73,6 +74,7 @@ set $gnome-schema org.gnome.desktop.interface
         gsettings set $gnome-schema cursor-theme 'Adwaita'
         gsettings set $gnome-schema font-name 'Sans 10'
         gsettings set $gnome-schema application-prefer-dark-theme 'true'
+        gsettings set $gnome-wm-pref button-layout :
     }
 # Gaps configuration
     gaps inner 5
@@ -83,6 +85,8 @@ set $gnome-schema org.gnome.desktop.interface
     client.focused_inactive #002b36 #073642 #839496 #073642 #073642
     client.unfocused        #002b36 #073642 #839496 #073642 #073642
     client.urgent           #002b36 #dc322f #fdf6e3 #002b36 #002b36
+# Nofitication configuration
+    exec mako
 
 ### Key bindings
 #
