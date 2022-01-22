@@ -1,7 +1,5 @@
 # Default config for sway
 #
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
 
 ### Variables
@@ -20,66 +18,71 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu wofi --show=drun | xargs swaymsg exec --
 # Monitor configuration
-set $output-primary DP-1
-set $output-secondary eDP-1
+set $output-extern-1 DP-1
+set $output-extern-2 DP-2
+set $output-laptop eDP-1
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output $output-primary bg ~/.wallpapers/ruedi-haberli-h0fDDhf-MWw-unsplash.jpg fill 
-    output $output-secondary bg ~/.wallpapers/ruedi-haberli-h0fDDhf-MWw-unsplash.jpg fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
+# Wallpaper configuration
+    output * bg ~/.wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg fill 
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-    output $output-primary mode 2560x1440@144Hz position 1920,0
-    output $output-secondary mode 1920x1080@60Hz position 0,0
+    output $output-extern-1 mode 2560x1440@144Hz position 1920,0
+    output $output-extern-2 mode 2560x1440@144Hz position 1920,0
+    output $output-laptop mode 1920x1080@60Hz position 0,0
 
 ### Idle configuration
 #
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# Screen lock configuration
+    exec swayidle -w \
+            timeout 300 'swaylock' \
+            timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+            before-sleep 'swaylock'
 
 ### Input configuration
 #
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+
+    input 1739:52744:SYNA30BD:00_06CB:CE08 {
+        natural_scroll enabled
+        middle_emulation enabled
+        drag_lock enabled
+        tap enabled
+        dwt enabled
+    }
+
+    input 1:1:AT_Translated_Set_2_keyboard {
+        xkb_layout us,si(us)
+        xkb_options grp:ctrls_toggle
+    }
+
+    input 1452:591:Keychron_K8_Keychron_K8 {
+        xkb_layout us,si(us)
+        xkb_options grp:ctrls_toggle
+    }
 
 ### Interface configuration
 #
 # Schema variable
 set $gnome-schema org.gnome.desktop.interface
 # Set interface settings
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'AdwMod-compact-dark'
-    gsettings set $gnome-schema icon-theme 'Qogir-dark'
-    gsettings set $gnome-schema cursor-theme 'Adwaita'
-    gsettings set $gnome-schema font-name 'Sans 10'
-    gsettings set $gnome-schema application-prefer-dark-theme 'true'
-}
-
-### Gaps configuration
-#
+    exec_always {
+        gsettings set $gnome-schema gtk-theme 'AdwMod-compact-dark'
+        gsettings set $gnome-schema icon-theme 'Qogir-dark'
+        gsettings set $gnome-schema cursor-theme 'Adwaita'
+        gsettings set $gnome-schema font-name 'Sans 10'
+        gsettings set $gnome-schema application-prefer-dark-theme 'true'
+    }
+# Gaps configuration
     gaps inner 5
+# Window titlebars
+    default_border pixel 5
+# Window colors
+    client.focused          #002b36 #6c71c4 #fdf6e3 #268bd2 #6c71c4
+    client.focused_inactive #002b36 #073642 #839496 #073642 #073642
+    client.unfocused        #002b36 #073642 #839496 #073642 #073642
+    client.urgent           #002b36 #dc322f #fdf6e3 #002b36 #002b36
 
 ### Key bindings
 #
@@ -105,7 +108,8 @@ exec_always {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec wlogout
 #
 # Moving around:
 #
@@ -156,16 +160,23 @@ exec_always {
     bindsym $mod+Shift+9 move container to workspace 9
     bindsym $mod+Shift+0 move container to workspace 10
     # Workspace to display mapping
-    workspace 1 output $output-primary
-    workspace 2 output $output-primary
-    workspace 3 output $output-primary
-    workspace 4 output $output-primary
-    workspace 5 output $output-primary
-    workspace 6 output $output-secondary
-    workspace 7 output $output-secondary
-    workspace 8 output $output-secondary
-    workspace 9 output $output-secondary
-    workspace 10 output $output-secondary
+    workspace 1 output $output-extern-1
+    workspace 2 output $output-extern-1
+    workspace 3 output $output-extern-1
+    workspace 4 output $output-extern-1
+    workspace 5 output $output-extern-1
+
+    workspace 1 output $output-extern-2
+    workspace 2 output $output-extern-2
+    workspace 3 output $output-extern-2
+    workspace 4 output $output-extern-2
+    workspace 5 output $output-extern-2
+    
+    workspace 6 output $output-laptop
+    workspace 7 output $output-laptop
+    workspace 8 output $output-laptop
+    workspace 9 output $output-laptop
+    workspace 10 output $output-laptop
 #
 # Layout stuff:
 #
@@ -204,6 +215,18 @@ exec_always {
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 #
+# Media keys
+#
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
+#
 # Resizing containers:
 #
 mode "resize" {
@@ -233,16 +256,8 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
     swaybar_command waybar
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
 }
 
 include /etc/sway/config.d/*
+include config.d/*

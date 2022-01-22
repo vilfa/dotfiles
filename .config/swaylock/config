@@ -1,0 +1,9 @@
+clock
+indicator
+screenshots
+effect-scale=0.5
+effect-blur=20x3
+datestr=%a, %b %d %Y
+timestr=%H:%M:%S
+ignore-empty-password
+deamonize
