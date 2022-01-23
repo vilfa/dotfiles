@@ -8,7 +8,7 @@
 
 window#waybar {
     background: transparent;
-    color: white;
+    color: #ffffff;
 }
 
 #window {
@@ -19,18 +19,18 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: white;
+    color: #ffffff;
     border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: #c9545d;
-    border-top: 2px solid #c9545d;
+    color: #1b70d8;
+    border-top: 2px solid #1b70d8;
 }
 
 #mode {
     background: #64727D;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #ffffff;
 }
 
 #idle_inhibitor, #clock, #backlight, #battery, #pulseaudio, #memory, #cpu, #network, #language, #tray {
@@ -38,10 +38,10 @@ window#waybar {
     margin: 0 5px;
 }
 
-#clock {
-    font-weight: bold;
+#mode {
+    margin: 0 5px;
 }
 
-#network.disconnected {
-    background: #f53c3c;
+#clock {
+    font-weight: bold;
 }

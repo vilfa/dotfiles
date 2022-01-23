@@ -3,23 +3,23 @@
 }
 
 window {
-  background-color: rgba(46, 52, 64, 0.5);
+  background-color: #202020;
 }
 
 button {
-  background-color: #2e3440;
+  background-color: #303030;
   border-style: solid;
-  border-width: 0px;
+  border-width: 0;
   border-radius: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25%;
-  color: #5e81ac;
+  color: #ffffff;
 }
 
 button:focus, button:active, button:hover {
-  background-color: #4c566a;
-  color: #81a1c1;
+  background-color: #4a4a4a;
+  color: #1b70d8;
   outline-style: none;
 }
 
