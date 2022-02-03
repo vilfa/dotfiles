@@ -30,7 +30,7 @@
         "format-icons": {
             "1": "",
             "2": "",
-            "3": "",
+            "3": "",
             "4": "",
             "5": "",
             "urgent": "",
@@ -129,7 +129,6 @@
     "clock": {
         "format": "{:%d-%m-%Y %H:%M}",
         "format-alt": "{:%a, %b %d %Y %H:%M}",
-        "tooltip": false,
         "tooltip-format": "",
         "on-click": "gnome-calendar"
     },
