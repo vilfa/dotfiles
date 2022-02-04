@@ -22,7 +22,6 @@
 .node-gyp
 .ssh
 .virtualbox
-.gnupg
 .gradle
 .npm
 .octave_hist

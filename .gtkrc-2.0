@@ -7,5 +7,5 @@ gtk-cursor-theme-size=24
 gtk-cursor-theme-name="breeze_cursors"
 gtk-theme-name="Breeze"
 gtk-icon-theme-name="breeze-dark"
-gtk-font-name="Sans Serif,  10"
+gtk-font-name="Roboto,  10"
 gtk-application-prefer-dark-theme=1
