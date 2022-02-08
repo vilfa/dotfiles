@@ -5,9 +5,14 @@
 	name = Luka Vilfan
 	signingkey = 0814D0AB5C84BA21
 [core]
-	editor = vim
+	editor = code --wait
+	autocrlf = input
 [commit]
 	gpgsign = true
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
