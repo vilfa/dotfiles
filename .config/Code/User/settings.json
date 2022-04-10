@@ -2,7 +2,7 @@
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "IBM Carbon Color Theme",
+    "workbench.colorTheme": "Brave Contrast (rainglow)",
     "editor.fontSize": 12,
     "editor.fontFamily": "monospace",
     "editor.renderWhitespace": "all",
@@ -32,9 +32,13 @@
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.cStandard": "c17",
     "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
-    // "C_Cpp.clang_format_style": "Visual Studio",
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, AlignAfterOpenBracket: Align, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 100, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: true, AllowAllParametersOfDeclarationOnNextLine: false, AllowAllArgumentsOnNextLine: false, BinPackArguments: false, BinPackParameters: false,}",
-    "[c],[cpp]": {
+    "[c]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+    },
+    "[cpp]": {
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
@@ -43,6 +47,16 @@
     "python.formatting.provider": "yapf",
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
+    },
+    "[tex]": {
+        "editor.wordWrap": "on",
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+    },
+    "[latex]": {
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+        "editor.wordWrap": "on"
     },
     "extensions.ignoreRecommendations": true,
     "files.associations": {
@@ -67,4 +81,8 @@
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
     "security.workspace.trust.untrustedFiles": "open",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "ltex.additionalRules.motherTongue": "sl-SI",
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.additionalRules.languageModel": "/home/luka/.config/texstudio/dictionaries",
 }
