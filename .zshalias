@@ -17,6 +17,7 @@ alias np="nano -w PKGBUILD"
 alias more="less"
 alias hx="hx -t 0"
 alias c="clear"
+alias cp="rsync -avh --no-compress --progress --info=progress2"
 
 base_64_decode() {
     echo "$1" | base64 -d
