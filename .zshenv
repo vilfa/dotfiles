@@ -1,5 +1,5 @@
-export GOPATH=/home/luka/.go
-export GOMODCACHE=/home/luka/.go/pkg/mod
+export GOPATH="$HOME/.go"
+export GOMODCACHE="$HOME/.go/pkg/mod"
 
 export PERL5LIB="$HOME/.perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 export PERL_LOCAL_LIB_ROOT="$HOME/.perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"

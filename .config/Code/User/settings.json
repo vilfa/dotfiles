@@ -37,11 +37,13 @@
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "[cpp]": {
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "OpenCL.formatting.name": "clang-format",
     "python.formatting.provider": "yapf",
@@ -51,12 +53,16 @@
     "[tex]": {
         "editor.wordWrap": "on",
         "editor.formatOnPaste": false,
+        "editor.formatOnSave": true,
         "editor.suggestSelection": "recentlyUsedByPrefix",
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
     },
     "[latex]": {
+        "editor.wordWrap": "on",
         "editor.formatOnPaste": false,
+        "editor.formatOnSave": true,
         "editor.suggestSelection": "recentlyUsedByPrefix",
-        "editor.wordWrap": "on"
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
     },
     "extensions.ignoreRecommendations": true,
     "files.associations": {
@@ -75,7 +81,6 @@
     "java.format.settings.profile": "GoogleStyle",
     "terminal.integrated.scrollback": 1000000,
     "explorer.confirmDragAndDrop": false,
-    "todohighlight.isCaseSensitive": false,
     "gitlens.advanced.messages": {
         "suppressLineUncommittedWarning": true
     },
@@ -85,4 +90,20 @@
     "ltex.additionalRules.motherTongue": "sl-SI",
     "ltex.additionalRules.enablePickyRules": true,
     "ltex.additionalRules.languageModel": "/home/luka/.config/texstudio/dictionaries",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.pdfWatch.delay": 100,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.default.browse.path": [
+        "${default}",
+        "/usr/include"
+    ],
+    "latex-workshop.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-m"
+    ],
 }

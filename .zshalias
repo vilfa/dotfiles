@@ -1,4 +1,4 @@
-alias config="/usr/bin/git --git-dir=/home/luka/.dotfiles/ --work-tree=/home/luka"
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias pls="sudo"
