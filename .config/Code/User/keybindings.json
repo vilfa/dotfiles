@@ -59,5 +59,10 @@
         "key": "ctrl+shift+up",
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-dendron.gotoNote",
+        "when": "editorFocus"
     }
 ]
