@@ -2,7 +2,7 @@
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Frantic Contrast (rainglow)",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
@@ -49,8 +49,9 @@
     "C_Cpp.default.cStandard": "c17",
     "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
     "C_Cpp.intelliSenseEngine": "Disabled",
-    "C_Cpp.clang_format_fallbackStyle": "LLVM",
-    "clang-format.fallbackStyle": "LLVM",
+    "C_Cpp.clang_format_fallbackStyle": "Mozilla",
+    "C_Cpp.debugShortcut": true,
+    "diffEditor.codeLens": true,
     "OpenCL.formatting.name": "clang-format",
     "extensions.ignoreRecommendations": true,
     "java.format.settings.profile": "GoogleStyle",
@@ -83,20 +84,17 @@
         "%TMPFILE%",
         "-m"
     ],
-    /**
-    * LANGUAGE SPECIFIC
-    */
     "[c]": {
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
-        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     },
     "[cpp]": {
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true,
-        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.python",
@@ -118,5 +116,4 @@
     "[java]": {
         "editor.defaultFormatter": "redhat.java"
     },
-    "mesonbuild.configureOnOpen": false,
 }
