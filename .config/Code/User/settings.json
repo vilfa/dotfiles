@@ -2,17 +2,18 @@
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Visual Studio Dark - C++",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
     "editor.fontSize": 12,
     "editor.fontFamily": "monospace",
+    "editor.fontWeight": "400",
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
     "editor.formatOnSave": true,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
+    "editor.largeFileOptimizations": true,
     "editor.rulers": [
         80
     ],
@@ -25,6 +26,9 @@
     "breadcrumbs.icons": false,
     "outline.icons": false,
     "scm.inputFontSize": 12,
+    "scm.alwaysShowRepositories": true,
+    "scm.alwaysShowActions": true,
+    "cmake.configureOnOpen": false,
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
@@ -60,20 +64,14 @@
     },
     "ltex.additionalRules.motherTongue": "sl-SI",
     "ltex.additionalRules.enablePickyRules": true,
-    "ltex.additionalRules.languageModel": "/home/luka/.config/texstudio/dictionaries",
+    "ltex.additionalRules.languageModel": "/home/vilfa/.config/texstudio/dictionaries",
     "ltex.completionEnabled": true,
     "ltex.language": "sl-SI",
     "ltex.statusBarItem": true,
     "ltex.enabled": [
-        "bibtex",
-        "context",
-        "context.tex",
-        "tex",
-        "html",
-        "latex",
-        "org",
-        "restructuredtext",
-        "rsweave"
+        // "bibtex",
+        // "tex",
+        // "latex",
     ],
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.chktex.enabled": true,
@@ -116,4 +114,9 @@
     "[java]": {
         "editor.defaultFormatter": "redhat.java"
     },
+    "clangd.arguments": [
+        "--enable-config",
+        "--compile-commands-dir=builddir"
+    ],
+    "github.gitProtocol": "ssh",
 }

@@ -12,7 +12,11 @@
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	stat = status --short --branch
 [diff]
 	tool = vscode
 [difftool "vscode"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+[tag]
+	forceSignAnnotated = true
+	gpgSign = true

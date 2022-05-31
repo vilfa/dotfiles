@@ -1,2 +1,5 @@
 BasedOnStyle: Mozilla
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
 IndentWidth: 4
+ObjCBlockIndentWidth: 4

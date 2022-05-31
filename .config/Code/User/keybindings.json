@@ -64,5 +64,18 @@
         "key": "ctrl+enter",
         "command": "-dendron.gotoNote",
         "when": "editorFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadOnly"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
     }
 ]
